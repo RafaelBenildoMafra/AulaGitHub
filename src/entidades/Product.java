@@ -2,9 +2,8 @@ package entidades;
 
 public class Product {
 	
-	private String name;
-	private Double price;
-	
+	protected String name;
+	protected Double price;
 	
 	public Product(String name, Double price) {
 
@@ -28,8 +27,11 @@ public class Product {
 		this.price = price;
 	}
 	
-	
-	
-	
+	public String priceTag() {
+		
+		return name + " $D" + price;
+		
+	}
+
 
 }
